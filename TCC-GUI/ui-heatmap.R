@@ -2,14 +2,14 @@
 
 fluidPage(column(
   3,
-  box(
+  shinydashboard::box(
     title = tagList(icon("cogs"), "Heatmap Parameters"),
     width = NULL,
     solidHeader = TRUE,
     status = "primary",
     uiOutput("heatmapParameter")
   ),
-  box(
+  shinydashboard::box(
     title = tagList(icon("code"), "Heatmap R Code"),
     width = NULL,
     status = "danger",
@@ -21,7 +21,7 @@ fluidPage(column(
 ),
 column(
   9,
-  box(
+  shinydashboard::box(
     title = tagList(icon("th"), "Heatmap"),
     width = NULL,
     solidHeader = TRUE,
@@ -29,7 +29,7 @@ column(
     footer = "It will be very time consuming if the number of genes is over hundred. Reduce the number by cutoff or wait patiently.",
     uiOutput("heatmapPlot")
   ),
-  box(
+  shinydashboard::box(
     title = tagList(icon("table"), "Listed Gene Information Table"),
     width = TRUE,
     solidHeader = TRUE,

@@ -2,14 +2,14 @@
 
 fluidPage(column(
   3,
-  box(
+  shinydashboard::box(
     title = tagList(icon("cogs"), "Expression Level Parameters"),
     solidHeader = TRUE,
     width = NULL,
     status = "primary",
     uiOutput("expressionParameters")
   ),
-  box(
+  shinydashboard::box(
     title = tagList(icon("code"), "Expression Level R Code"),
     solidHeader = TRUE,
     width = NULL,

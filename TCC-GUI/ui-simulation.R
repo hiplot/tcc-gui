@@ -2,7 +2,7 @@
 
 fluidPage(column(
   3,
-  box(
+  shinydashboard::box(
     title = tagList(icon("cogs"), "Data Simulation Parameters"),
     width = NULL,
     solidHeader = TRUE,
@@ -47,7 +47,7 @@ fluidPage(column(
     )),
     footer = "Only support single-factor experimental design now."
   ),
-  box(
+  shinydashboard::box(
     title = tagList(icon("info-circle"), "Summary"),
     solidHeader = TRUE,
     status = "info",
@@ -57,14 +57,14 @@ fluidPage(column(
 ),
 column(
   9,
-  box(
+  shinydashboard::box(
     title = tagList(icon("wrench"), "Group Parameters"),
     width = NULL,
     solidHeader = TRUE,
     status = "primary",
     uiOutput("simulationGroup")
   ),
-  box(
+  shinydashboard::box(
     title = tagList(icon("table"), "Simulation Data"),
     width = NULL,
     solidHeader = TRUE,

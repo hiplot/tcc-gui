@@ -2,14 +2,14 @@
 
 fluidPage(column(
   3,
-  box(
+  shinydashboard::box(
     title = tagList(icon("cogs"), "PCA Parameters"),
     width = NULL,
     solidHeader = TRUE,
     status = "primary",
     uiOutput("pcaParameter")
   ),
-  box(title = tagList(icon("code"), "PCA Code"),
+  shinydashboard::box(title = tagList(icon("code"), "PCA Code"),
       solidHeader = TRUE,
       status = "danger",
       collapsible = TRUE,
@@ -30,7 +30,7 @@ column(
     tabPanel(tagList(icon("square-o"), "PCA Plot (2D)"),
              uiOutput("pca2dPlotUI"))
   ),
-  box(
+  shinydashboard::box(
     title = tagList(icon("info-circle"), "Summary of PCA"),
     width = NULL,
     solidHeader = TRUE,

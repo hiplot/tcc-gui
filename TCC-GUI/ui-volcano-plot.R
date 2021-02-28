@@ -1,14 +1,14 @@
 # ui-volcano-plot.R
 fluidPage(fluidRow(column(
   3,
-  box(
+  shinydashboard::box(
     title = tagList(icon("cogs"), "Volcano Plot Parameters"),
     solidHeader = TRUE,
     status = "primary",
     width = NULL,
     uiOutput("valcanoParameter")
   ),
-  box(
+  shinydashboard::box(
     title = tagList(icon("code"), "Volcano Plot Code"),
     solidHeader = TRUE,
     status = "danger",
@@ -20,14 +20,14 @@ fluidPage(fluidRow(column(
 ),
 column(
   9,
-  box(
+  shinydashboard::box(
     title = tagList(icon("line-chart"), "Volcano Plot"),
     solidHeader = TRUE,
     status = "info",
     width = NULL,
     uiOutput("volcanoUI")
   ),
-  box(
+  shinydashboard::box(
     title = tagList(icon("table"), "Result Table"),
     solidHeader = TRUE,
     status = "info",

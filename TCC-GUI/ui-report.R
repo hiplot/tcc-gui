@@ -2,7 +2,7 @@
 
 fluidPage(column(
   3,
-  box(
+  shinydashboard::box(
     title = tagList(icon("cogs"), "Report Parameters"),
     width = NULL,
     solidHeader = TRUE,
@@ -30,7 +30,7 @@ fluidPage(column(
   )
 ),
 column(9,
-       box(
+       shinydashboard::box(
          title = "Output Option",
          status = "primary",
          solidHeader = TRUE,

@@ -2,7 +2,7 @@
 
 fluidPage(useSweetAlert(), fluidRow(column(
   3,
-  box(
+  shinydashboard::box(
     title = tagList(icon("cogs"), "TCC Computation Parameters"),
     width = NULL,
     solidHeader = TRUE,
@@ -71,7 +71,7 @@ fluidPage(useSweetAlert(), fluidRow(column(
       ))
     )
   ),
-  box(
+  shinydashboard::box(
     title = tagList(icon("code"), "TCC Computation Code"),
     status = "danger",
     solidHeader = TRUE,
@@ -83,14 +83,14 @@ fluidPage(useSweetAlert(), fluidRow(column(
 ),
 column(
   9,
-  box(
+  shinydashboard::box(
     title = tagList(icon("table"), "Result Table"),
     width = NULL,
     solidHeader = TRUE,
     status = "info",
     uiOutput("mainResultTable")
   ),
-  box(
+  shinydashboard::box(
     title = tagList(icon("table"), "Summary of TCC Normalization"),
     width = NULL,
     solidHeader = TRUE,

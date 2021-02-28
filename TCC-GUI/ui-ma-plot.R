@@ -2,7 +2,7 @@
 
 fluidPage(fluidRow(column(
   3,
-  box(
+  shinydashboard::box(
     title = tagList(icon("cogs"), "MA Plot Parameters"),
     solidHeader = TRUE,
     status = "primary",
@@ -21,7 +21,7 @@ fluidPage(fluidRow(column(
       plotlyOutput("fdrCutoffPlotInMAPage") %>% withSpinner()
     )
   ),
-  box(
+  shinydashboard::box(
     title = tagList(icon("code"), "MA Plot Code"),
     solidHeader = TRUE,
     status = "danger",
@@ -33,14 +33,14 @@ fluidPage(fluidRow(column(
 ),
 column(
   9,
-  box(
+  shinydashboard::box(
     title = tagList(icon("line-chart"), "MA Plot"),
     solidHeader = TRUE,
     status = "info",
     width = NULL,
     uiOutput("MAPlotUI")
   ),
-  box(
+  shinydashboard::box(
     title = tagList(icon("table"), "Result Table"),
     solidHeader = TRUE,
     status = "info",

@@ -35,7 +35,7 @@ fluidPage(fluidRow(column(
     )
   )
   ,
-  box(
+  shinydashboard::box(
     title = tagList(icon("tags"), "Group Assignment"),
     solidHeader = TRUE,
     status = "primary",
@@ -66,7 +66,7 @@ fluidPage(fluidRow(column(
     ),
     footer = helpText("TCC-GUI expect first label should be Group1 (G1) and the next be Group2 (G2), and so on.")
   ),
-  box(
+  shinydashboard::box(
     title = tagList(icon("info-circle"), "Summary"),
     solidHeader = TRUE,
     status = "info",
@@ -76,7 +76,7 @@ fluidPage(fluidRow(column(
 ),
 column(
   9,
-  box(
+  shinydashboard::box(
     title = tagList(icon("table"), "Read Count Table"),
     solidHeader = TRUE,
     status = "info",
