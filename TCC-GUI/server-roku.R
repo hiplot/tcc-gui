@@ -13,7 +13,7 @@ observeEvent(input$runROKU, {
     } else {
       data <- variables$norData
     }
-    ROKUresult <- ROKU(data),
+    ROKUresult <- ROKU(data)
     
   })
 })
